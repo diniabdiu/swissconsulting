@@ -178,10 +178,11 @@ body{
 .headerSlide .indicator div{
 	display: inline-block;
 	width:25px;
-	height: 25px;
+	height: 2px;
 	color:#e5e5e5;
 	background-color: #ff1d2593;
-	border-radius:50%;
+	border-radius:1px;
+    text-indent: -9999px;
 	text-align: center;
 	line-height: 25px;
 	margin:0 3px;
