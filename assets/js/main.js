@@ -123,7 +123,11 @@ document.addEventListener("DOMContentLoaded", function(){
   }); 
   // DOMContentLoaded  end
 
- 
+  $(document).ready(function(){
+	$('#nav-icon4').click(function(){
+		$(this).toggleClass('open');
+	});
+});
 
 
 
