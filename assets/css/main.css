@@ -195,11 +195,12 @@ body{
 }
 /* navbar */
 .navbarEdit {
-    background: #ff1d25;
+    background: #333;
     z-index: 123;
-    height: 100px;
+    /* height: 100px; */
     position: sticky;
     top: 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 8%);
 }
 .hamburgerMenu {
     display: flex;
@@ -232,7 +233,7 @@ body{
 }
 /* aboutUs */
 .aboutUs-section {
-    padding: 100px 0;
+    padding: 150px 0;
 }
 .aboutUs {
     /* box-shadow: 0 0 25px #33333312; */
@@ -271,6 +272,15 @@ body{
     animation: captionText .5s ease forwards;
 	animation-delay:1.4s;
 }
+.pattern {
+    width: 100%;
+     height: 100%;
+    /*background-size: cover; */
+    background-image: url('../img/favicon.png');
+    background-size: contain;
+    background-repeat: repeat;
+    transform: rotate(271deg);
+}
 /* services */
 .services-section {
     padding: 0 0 100px 0;
@@ -286,6 +296,18 @@ body{
     margin: 0 auto;
     position: relative;
     margin-bottom: 40px;
+}
+.servicesTitle span {
+    z-index: 22;
+    position: relative;
+}
+.iconBadge {
+    width: 50px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    z-index: 1;
 }
 .servicesWrapp {
     display: flex;
@@ -321,8 +343,85 @@ body{
     font-family: ArchivoSemiBold;
     color: #e5e5e5;
 }
+.logo h6{
+    font-family: ArchivoBold;
+    color: #e5e5e5;
+    text-transform: uppercase;
+    font-size: 38px;
+    display: flex;
+    margin: 0;
+}
+.logoMainText {
+    display: flex;
+}
+.logoSecText {
+    align-self: center ;
+    margin-left: 2px;
+}
+.logoSecText h5 {
+    font-family: ArchivoSemiBold;
+    font-size: 13px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    color: #e5e5e5;
+}
+.footerSocial a{
+    color: #e5e5e5;
+    font-size: 20px;
+    margin-right: 8px ;
+}
+.footer {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+    /* box-shadow: 0 0 12px rgba(0, 0, 0, 8%);
+    background: #8080800d; */
+}
+footer {
+    box-shadow: 0 0 12px rgba(0, 0, 0, 8%);
+}
+.footerBrand .logo {
+    margin-bottom: 15px;
+}
+.footerInfo ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footerInfo ul li a {
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+}
+.footerInfo ul li a:hover {
+    text-decoration: none;
+}
+.footerPages ul {
+    list-style: none;
+    padding-left: 0;
+}
+.footerPages ul li a {
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+    text-transform: uppercase;
+}
+.footerPages ul li a:hover {
+    text-decoration: none;
+}
+.footerCopyright {
+    color: #e5e5e5;
+    font-size: 12px;
+    font-family: ArchivoSemiBold;
+    text-align: center;
+    margin-bottom: 10px;
+}
 /*responsive*/
 @media(max-width: 767px){
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 	.controls{
 		display: none;
 	}
