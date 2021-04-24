@@ -148,7 +148,7 @@ body{
  width: 40px;
  margin-top: -20px;
  color:#e5e5e5;
- background-color: #ff1d25;
+ background-color: #ff1d2593;
  text-align: center;
  line-height: 40px;
  font-size:20px;
@@ -158,7 +158,7 @@ body{
 }
 .headerSlide .controls .prev:hover,
 .headerSlide .controls .next:hover{
-	background-color: #ff1d2593;
+	background-color: #ff1d25;
 }
 .headerSlide .controls .prev{
  left:0;
@@ -178,7 +178,7 @@ body{
 .headerSlide .indicator div{
 	display: inline-block;
 	width:25px;
-	height: 2px;
+	height:3px;
 	color:#e5e5e5;
 	background-color: #ff1d2593;
 	border-radius:1px;
@@ -186,6 +186,7 @@ body{
 	text-align: center;
 	line-height: 25px;
 	margin:0 3px;
+    cursor: pointer;
 }
 
 .headerSlide .indicator div.active{
@@ -198,7 +199,7 @@ body{
 .navbarEdit {
     background: #333;
     z-index: 123;
-    /* height: 100px; */
+    height: 106px;
     position: sticky;
     top: 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 8%);
@@ -286,11 +287,22 @@ body{
 
 .navbarMenu a{
     font-size: 15px;
-    font-family: ArchivoReg;
-    color: #fff;
+    font-family: ArchivoSemiBold;
+    color: #e5e5e5;
     text-transform: uppercase;
 }
+.navbarMenu a:hover {
+    color: #fff;
+}
+.navbarMenu a.active {
+    font-family: ArchivoBold;
+}
 /* flexbox */
+.flexBox-revert {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
 .flexBox {
     display: flex;
     flex-wrap: nowrap;
@@ -351,6 +363,20 @@ body{
     background-size: contain;
     background-repeat: repeat;
     transform: rotate(271deg);
+    opacity: .2;
+}
+.swiss-alert-success {
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+    background: transparent;
+    font-size:15px;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.24);
+}
+.swiss-alert-danger {
+    color: #333;
+    background: #ff1d258f;
+    font-family: ArchivoSemiBold;
+    font-size:15px;
 }
 /* services */
 .services-section {
@@ -491,8 +517,139 @@ footer {
     text-align: center;
     margin-bottom: 10px;
 }
+.fullHeightCenter {
+    display: grid;
+    height: calc(100vh - 106px);
+    align-items: center;
+    position: relative;
+}
+.contact {
+    margin-bottom: 3rem;
+}
+.address h2 {
+    color: #e5e5e5;
+    font-family: ArchivoBold;
+    font-size: 21px;
+    margin: 0 0 1rem 0;
+}
+.address h4 {
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+    font-size: 15px;
+    margin: 0 0 1rem 0;
+}
+.contact h2 {
+    font-size: 15px;
+
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+    margin: 0 0 1rem 0;
+}
+.contact h4 {
+    font-size: 15px;
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+    margin: 0 0 1rem 0;
+}
+.googlemap h2 {
+    color: #e5e5e5;
+    font-family: ArchivoBold;
+    font-size: 21px;
+    margin: 0 0 1rem 0;
+}
+.googlemap a {
+    border-radius: 5px;
+    padding:  9px 20px;
+    color: #e5e5e5;
+    border: 1px solid #e5e5e5;
+    font-size: 15px;
+    font-family: ArchivoSemiBold ;
+}
+.googlemap a:hover {
+    text-decoration: none;
+}
+.swissContactForm {
+    margin-bottom: 40px;
+}
+.swissContactForm p {
+    margin: 0;
+}
+.swissContactForm input{
+    background: transparent;
+    font-family: ArchivoSemiBold;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 2.5px solid #ff1d25a8;
+    border-radius: 0;
+    color: #808080;
+    transition: all .3s;
+}
+.swissContactForm input:focus {
+    box-shadow: unset;
+    outline: none;
+    border-radius: 5px;
+    color: #e5e5e5;
+    background: transparent;
+    border: 2.5px solid #ff1d25;
+}
+.swissContactForm textarea {
+    background: transparent;
+    font-family: ArchivoSemiBold;
+    font-size: 14px;
+    border: 0;
+    border-bottom: 2.5px solid #ff1d25a8;
+    border-radius: 0;
+    color: #808080;
+}
+.swissContactForm textarea:focus {
+    outline: none;
+    box-shadow: unset;
+    background: transparent;
+    border-radius: 5px;
+    border: 2.5px solid #ff1d25;
+
+}
+.swissContactForm button {
+    font-size: 15px;
+    font-family: ArchivoBold;
+    /* border: 1px solid #ff1d25; */
+    background: #e5e5e5;
+    color: #333;
+}
+.swissContactForm button:hover {
+    color: #e5e5e5;
+    background: #ff1d25;
+}
+.swissContactForm button:focus {
+    box-shadow: none;
+    -webkit-appearance: none;
+}
+.logoBadge {
+    position: absolute;
+    z-index: -1;
+    bottom: 50%;
+    top: 50%;
+    width: 40%;
+    left: 0;
+    opacity: .2;
+    transform: translateY(-50%);
+}
 /*responsive*/
 @media(max-width: 767px){
+    .flexBox-revert {
+        flex-wrap: wrap-reverse;
+        
+    }
+    .logoBadge {
+        width: 70%;
+        top: unset;
+        bottom: 10%;
+        transform: unset;
+    }
+    .fullHeightCenter {
+        height: auto;
+        padding: 60px 0;
+    }
     .animationBorderLeft {
         width: 100%;
         background: #ff1d25;
@@ -507,9 +664,7 @@ footer {
         flex-direction: column;
         align-items: flex-start;
     }
-	.controls{
-		display: none;
-	}
+
     .flexBox {
         flex-wrap: wrap;
     }
@@ -524,6 +679,11 @@ footer {
     }
     .service {
         flex: 0 320px;
+    }
+    .headerSlide .controls .prev, .headerSlide .controls .next {
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
     }
 }
 
