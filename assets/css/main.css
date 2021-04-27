@@ -348,9 +348,7 @@ body{
 .aboutUs h1 {
     color: #e5e5e5;
     font-family: ArchivoBold;
-    animation: captionText .5s ease forwards;
 
-	animation-delay:1.2s;
     margin-bottom: 25px;
     position: relative;
     width: fit-content;
@@ -374,8 +372,7 @@ body{
     color: #e5e5e5;
     text-align: justify;
     font-family: ArchivoSemiBold;
-    animation: captionText .5s ease forwards;
-	animation-delay:1.4s;
+
 }
 .pattern {
     width: 100%;

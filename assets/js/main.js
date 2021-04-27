@@ -154,3 +154,7 @@ $(document).ready(function () {
       }
   });
 });
+
+//Animation init
+AOS.init(); 
+     
