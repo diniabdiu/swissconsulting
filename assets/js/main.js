@@ -129,5 +129,28 @@ document.addEventListener("DOMContentLoaded", function(){
 	});
 });
 
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+  anchor.addEventListener('click', function (e) {
+      e.preventDefault();
 
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+      });
+  });
+});
 
+// const navLinks = document.querySelectorAll('.nav-item')
+// const menuToggle = document.getElementById('navbarSupportedContent')
+// const bsCollapse = new bootstrap.Collapse(menuToggle)
+// navLinks.forEach((l) => {
+//     l.addEventListener('click', () => { bsCollapse.toggle() })
+// })
+$(document).ready(function () {
+  $(document).click(function (event) {
+      var click = $(event.target);
+      var _open = $(".navbar-collapse").hasClass("show");
+      if (_open === true && !click.hasClass("navbar-toggler")) {
+          $(".navbar-toggler").click();
+      }
+  });
+});

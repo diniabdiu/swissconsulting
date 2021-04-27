@@ -33,12 +33,16 @@
 .scrolled-up{
     transform:translateY(0); transition: all 0.3s ease-in-out;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 body{
 	margin:0;
 	font-family: ArchivoReg;
 	overflow-x: hidden;
     background: #333;
+    scroll-behavior: smooth;
+
 }
 
 *{
@@ -196,6 +200,9 @@ body{
     background: url('../img/homeslider.jpg');
 }
 /* navbar */
+.logoMain img {
+    width: 200px;
+}
 .navbarEdit {
     background: #333;
     z-index: 123;
@@ -203,6 +210,14 @@ body{
     position: sticky;
     top: 0;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 8%);
+
+}
+.navbarEdit>div {
+    margin: 0 auto;
+}
+.navbarEdit .navbar-brand {
+    margin: 0;
+    padding: 0;
 }
 .hamburgerMenu {
     display: flex;
@@ -284,7 +299,9 @@ body{
 
 
 
-
+.navbarMenu ul {
+    margin-left: auto;
+}
 .navbarMenu a{
     font-size: 15px;
     font-family: ArchivoSemiBold;
@@ -302,6 +319,11 @@ body{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+}
+.flexBox-revert .flexBox-first {
+    display: flex;
+    flex-direction: column;
+
 }
 .flexBox {
     display: flex;
@@ -358,12 +380,11 @@ body{
 .pattern {
     width: 100%;
      height: 100%;
-    /*background-size: cover; */
-    background-image: url('../img/favicon.png');
+    background-image: url('../img/swissPatternStroke.png');
     background-size: contain;
-    background-repeat: repeat;
-    transform: rotate(271deg);
-    opacity: .2;
+    background-repeat: no-repeat;
+    transform: rotate(180deg) translateY(25%);
+    opacity:1;
 }
 .swiss-alert-success {
     color: #e5e5e5;
@@ -569,7 +590,10 @@ footer {
     text-decoration: none;
 }
 .swissContactForm {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
+}
+.swissContactForm button{
+    margin: 40px 0 0;
 }
 .swissContactForm p {
     margin: 0;
@@ -611,13 +635,15 @@ footer {
 }
 .swissContactForm button {
     font-size: 15px;
-    font-family: ArchivoBold;
-    /* border: 1px solid #ff1d25; */
-    background: #e5e5e5;
-    color: #333;
+    font-family: ArchivoReg;
+    border: 1px solid #e5e5e5;
+    background: transparent;
+    color: #e5e5e5;
 }
 .swissContactForm button:hover {
     color: #e5e5e5;
+    font-family: ArchivoBold;
+
     background: #ff1d25;
 }
 .swissContactForm button:focus {
@@ -634,8 +660,39 @@ footer {
     opacity: .2;
     transform: translateY(-50%);
 }
+.rowedited {
+    align-items: stretch;
+}
 /*responsive*/
 @media(max-width: 767px){
+    .flexBox-revert .flexBox-second {
+        margin-bottom: 40px;
+    }
+    .logoMain img {
+        width: 150px;
+        padding-left: 16px;
+    }
+    .navbarEdit {
+        padding: 0;
+    }
+    .navbarEdit>div {
+        /* margin-top: 8px; */
+    }
+    .navbarMenu  {
+        height: calc(100vh - 106px);
+        background: #333;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    .navbarMenu ul {
+
+        margin: auto;
+    }
+    .navbarMenu a {
+        font-size: 31px;
+    }
     .flexBox-revert {
         flex-wrap: wrap-reverse;
         
