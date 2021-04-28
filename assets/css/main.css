@@ -91,6 +91,10 @@ body{
 }
 .headerSlide .caption{
 	width:50%;
+    /* border-radius: 5px;
+    padding: 40px;
+    background: #33333314; */
+    text-shadow: 1px 1px 20px #000;
 }
 .headerSlide .caption h1{
 	font-size:42px;
@@ -197,10 +201,16 @@ body{
     background-color: #ff1d25;
 }
 .slideimg-1 {
-    background: url('../img/homeslider.jpg');
+    background: url('../img/images/business-colleague-sitting-at-table-during-corpora-PKY6UY8.jpg');
+}
+.slideimg-2 {
+    background: url('../img/images/businessman-with-cellphone-PVWT4XK.jpg');
+}
+.slideimg-3 {
+    background: url('../img/images/start-up-meeting-of-colleagues-DRFWYQ9.jpg');
 }
 /* navbar */
-.logoMain img {
+.logoMain svg {
     width: 200px;
 }
 .navbarEdit {
@@ -319,6 +329,7 @@ body{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    z-index: 3;
 }
 .flexBox-revert .flexBox-first {
     display: flex;
@@ -329,6 +340,8 @@ body{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
+    z-index: 3;
+
 }
 .flexBox-first {
     flex: 0 50%;
@@ -338,7 +351,8 @@ body{
 }
 /* aboutUs */
 .aboutUs-section {
-    padding: 150px 0;
+    /* padding: 150px 0; */
+
 }
 .aboutUs {
     /* box-shadow: 0 0 25px #33333312; */
@@ -376,11 +390,10 @@ body{
 }
 .pattern {
     width: 100%;
-     height: 100%;
+     height: 120px;
     background-image: url('../img/swissPatternStroke.png');
     background-size: contain;
     background-repeat: no-repeat;
-    transform: rotate(180deg) translateY(25%);
     opacity:1;
 }
 .swiss-alert-success {
@@ -398,7 +411,7 @@ body{
 }
 /* services */
 .services-section {
-    padding: 0 0 100px 0;
+    padding: 100px 0 100px 0;
 }
 .servicesTitle {
     font-size: 31px;
@@ -649,7 +662,7 @@ footer {
 }
 .logoBadge {
     position: absolute;
-    z-index: -1;
+    z-index: 2;
     bottom: 50%;
     top: 50%;
     width: 40%;
@@ -660,12 +673,55 @@ footer {
 .rowedited {
     align-items: stretch;
 }
+.imgBg-reachus {
+    background-image: url('../img/images/skyview.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width:100%;
+    height: 100%;
+}
+.layerBg-reachus {
+    background: rgba(51, 51, 51, 0.93);    
+    width:100%;
+    height: 100%;
+}
+.imgBg-aboutus {
+    background-image: url('../img/images/skyscraper-building-in-hong-kong-city-view-in-blue-3H3T5VA.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    width:100%;
+
+}
+.layerBg-aboutus {
+    background: rgba(51, 51, 51, .93);    
+    width:100%;
+    height: 100%;
+}
+.halfHeightCenter {
+    height: 75vh;
+    align-items: center;
+}
 /*responsive*/
 @media(max-width: 767px){
+    /* #aboutus .flexBox-second {
+        display: none;
+    } */
+    .flexBox .flexBox-first {
+        padding-bottom: 40px;
+    }
+    .halfHeightCenter {
+        height: auto;
+        padding: 120px 0;
+    }
+    .headerSlide .caption {
+        width: 70%;
+    }
     .flexBox-revert .flexBox-second {
         margin-bottom: 40px;
     }
-    .logoMain img {
+    .logoMain svg {
         width: 150px;
         padding-left: 16px;
     }
