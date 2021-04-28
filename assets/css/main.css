@@ -204,7 +204,7 @@ body{
     background: url('../img/images/business-colleague-sitting-at-table-during-corpora-PKY6UY8.jpg');
 }
 .slideimg-2 {
-    background: url('../img/images/businessman-with-cellphone-PVWT4XK.jpg');
+    background: url('../img/images/futuristic-urban-buildings-at-night-P3KZ337.jpg');
 }
 .slideimg-3 {
     background: url('../img/images/start-up-meeting-of-colleagues-DRFWYQ9.jpg');
@@ -615,16 +615,20 @@ footer {
     border: 0;
     border-bottom: 2.5px solid #ff1d25a8;
     border-radius: 0;
-    color: #808080;
+    color: #e5e5e5;
     transition: all .3s;
+}
+.swissContactForm input::placeholder {
+    font-family: ArchivoBold;
+    color: #808080;
 }
 .swissContactForm input:focus {
     box-shadow: unset;
     outline: none;
-    border-radius: 5px;
+    border-radius: 0px;
     color: #e5e5e5;
     background: transparent;
-    border: 2.5px solid #ff1d25;
+    border-bottom: 2.5px solid #ff1d25!important;
 }
 .swissContactForm textarea {
     background: transparent;
@@ -633,14 +637,19 @@ footer {
     border: 0;
     border-bottom: 2.5px solid #ff1d25a8;
     border-radius: 0;
+    color: #e5e5e5;
+}
+.swissContactForm textarea::placeholder {
+    font-family: ArchivoBold;
     color: #808080;
 }
 .swissContactForm textarea:focus {
     outline: none;
     box-shadow: unset;
     background: transparent;
-    border-radius: 5px;
-    border: 2.5px solid #ff1d25;
+    border-radius: 0;
+    border-bottom: 2.5px solid #ff1d25;
+    color: #e5e5e5;
 
 }
 .swissContactForm button {
