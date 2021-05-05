@@ -367,7 +367,7 @@ body{
 .aboutUs h1 {
     color: #e5e5e5;
     font-family: ArchivoBold;
-
+    font-size: 31px;
     margin-bottom: 25px;
     position: relative;
     width: fit-content;
@@ -389,9 +389,9 @@ body{
 }
 .aboutUs p {
     color: #e5e5e5;
-    text-align: justify;
+    /* text-align: justify; */
     font-family: ArchivoSemiBold;
-
+    font-size: 16px;
 }
 .pattern {
     width: 100%;
@@ -471,7 +471,6 @@ body{
     height: 80px;
 }
 .serviceDesc {
-    text-align: justify;
     font-size: 16px;
     font-family: ArchivoSemiBold;
     color: #e5e5e5;
