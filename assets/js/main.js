@@ -2,6 +2,12 @@ $(document).ready(function(){
 	$("#nav-icon4").click(function(){
     $(this).toggleClass('open');
 	});
+  $("#toggleJobs").click(function(){
+    $('#toggleHeight').toggleClass('heightFull');
+    $('#toggleHeight').toggleClass('spaceTB');
+	});
+  el_autohide.classList.remove('scrolled-up');
+  el_autohide.classList.add('scrolled-down');
 });
 
 
