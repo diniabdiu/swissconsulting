@@ -766,14 +766,12 @@ footer {
 }
 .animationArr {
     animation: sliderow 3s infinite;
-    /* transition: all .5s; */
-    vertical-align: middle;
     font-size: 20px;
 }
 .jobWrapp h6 {
     font-size: 18px;
     color: #e5e5e5;
-    /* padding-top: 80px; */
+  
     font-family: ArchivoSemiBold;
 
 }
