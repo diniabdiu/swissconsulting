@@ -75,20 +75,7 @@ body{
 		transform: scale(1);
 	}
 }
-@keyframes sliderow{
-	0%{
-        transform: translateY(100px);
-        font-size: 30px;
-	}
-	50%{
-        transform: translateY(0);
-        font-size: 20px;
-	}
-    100%{
-        transform: translateY(100px);
-        font-size: 30px;
-	}
-}
+
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -749,9 +736,30 @@ footer {
 }
 .heightFull {
     height: calc(100vh - 106px);
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
+}
+.titleJob {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background: #00000017;
+    box-shadow:0px 20px 20px rgb(0 0 0 / 8%);
+    padding: 20px;
+    border-radius: 5px; */
+}
+.titleJob h6 {
+
+    font-family: ArchivoSemiBold;
+    font-size: 36px;
+}
+.titleJob h3 {
+    color: #e5e5e5;
+    font-family: ArchivoSemiBold;
+    font-size: 16px;
+    margin:0;
 }
 .spaceTB {
     padding: 80px 0;
@@ -759,10 +767,19 @@ footer {
 .heightAuto {
     height: auto;
 }
+.jobWrapp {
+    background: #00000017; 
+    box-shadow: 0px 20px 20px rgb(0 0 0 / 8%); 
+    padding: 20px; 
+    border-radius: 5px;
+}
 .jobWrapp h1 {
-    color: #ff1d25;
+    color: #e5e5e5;
     font-family: ArchivoSemiBold;
-    font-size: 36px;
+    font-size: 25px;
+    margin:0;
+    justify-content: space-between;
+    display: flex;
 }
 .animationArr {
     animation: sliderow 3s infinite;
@@ -773,12 +790,15 @@ footer {
     color: #e5e5e5;
   
     font-family: ArchivoSemiBold;
-
+    color: #ff1d25;
+    font-family: ArchivoSemiBold;
+    font-size: 36px;
 }
 .jobWrapp a {
     color: #e5e5e5;
     font-size: 18px;
     text-decoration: underline;
+    text-align: end;
 }
 .jobWrapp h5 {
     color: #e5e5e5;
@@ -832,15 +852,25 @@ footer {
 }
 /*responsive*/
 @media(max-width: 767px){
+    .titleJob {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .jobWrapp a {
+        text-align: left;
+        margin-top: 8px;
+    }
     .jobWrapp h1 {
         font-size: 25px;
+        flex-direction: column;
     }
     .jobWrapp h6 {
-        font-size: 16px;
+        font-size: 31px;
         flex-direction: column-reverse;
     }
     .jobWrapp h6 a {
         padding: 20px 0;
+
     }
     .jobInfo {
         flex-direction: column;

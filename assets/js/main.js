@@ -4,7 +4,7 @@ $(document).ready(function(){
 	});
   $("#toggleJobs").click(function(){
     $('#toggleHeight').toggleClass('heightFull');
-    $('#toggleHeight').toggleClass('spaceTB');
+    // $('#toggleHeight').toggleClass('spaceTB');
     $('.animationArr').toggleClass('d-none');
 	});
   el_autohide.classList.remove('scrolled-up');
