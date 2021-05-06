@@ -5,6 +5,7 @@ $(document).ready(function(){
   $("#toggleJobs").click(function(){
     $('#toggleHeight').toggleClass('heightFull');
     $('#toggleHeight').toggleClass('spaceTB');
+    $('.animationArr').toggleClass('d-none');
 	});
   el_autohide.classList.remove('scrolled-up');
   el_autohide.classList.add('scrolled-down');

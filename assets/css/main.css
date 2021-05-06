@@ -75,6 +75,20 @@ body{
 		transform: scale(1);
 	}
 }
+@keyframes sliderow{
+	0%{
+        transform: translateY(100px);
+        font-size: 30px;
+	}
+	50%{
+        transform: translateY(0);
+        font-size: 20px;
+	}
+    100%{
+        transform: translateY(100px);
+        font-size: 30px;
+	}
+}
 .container{
 	max-width: 1170px;
 	margin:auto;
@@ -749,6 +763,12 @@ footer {
     color: #ff1d25;
     font-family: ArchivoSemiBold;
     font-size: 36px;
+}
+.animationArr {
+    animation: sliderow 3s infinite;
+    /* transition: all .5s; */
+    vertical-align: middle;
+    font-size: 20px;
 }
 .jobWrapp h6 {
     font-size: 18px;
