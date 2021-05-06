@@ -66,5 +66,6 @@ $(document).ready(function () {
 });
 
 //Animation init
-AOS.init(); 
-     
+AOS.init({
+  once: true
+})
