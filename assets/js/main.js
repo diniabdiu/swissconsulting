@@ -42,7 +42,13 @@ document.addEventListener("DOMContentLoaded", function(){
   
   }); 
   // DOMContentLoaded  end
-
+  $(document).ready(function(){
+    $('.nav-link').click(function(){
+        $('.nav-link').removeClass('active');
+        $(this).addClass('active');
+        console.log('test');
+    });
+  });
 
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
